@@ -1,0 +1,2 @@
+Pierwszy raport
+Zapoznanie się ze środowiskiem UE5 oraz metodami tworzenia gier 2D. Stworzenie projektu i ustawienie go pod gry 2D
