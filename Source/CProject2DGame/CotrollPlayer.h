@@ -4,16 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "MyCharacterCont.generated.h"
+#include "CotrollPlayer.generated.h"
+
 
 UCLASS()
-class CPROJECT2DGAME_API AMyCharacterCont : public ACharacter
+class CPROJECT2DGAME_API ACotrollPlayer : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	AMyCharacterCont();
+	ACotrollPlayer();
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,5 +26,10 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+protected:
+
+	void MoveRight(float AxisVal);
+	void Jump(float AxisVal);
 
 };
